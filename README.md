@@ -1,5 +1,9 @@
 # pose-estimation-detection
 
+NOTE: Before doing all the steps, go to your files, create a folder named "tf_pose" and place it with the files of this repository. Here is the google drive link of downloading tf_pose folder:
+
+https://drive.google.com/open?id=1rCrR9i2_IPkipZxqDRgUDrm5S24kXG2m
+
 Pose estimation & detection has been minimally implemented using the OpenPose implementation https://github.com/ildoonet/tf-pose-estimation with Tensorflow. For the binary classification of poses, namely the classes : sitting or standing, the model used, MobileNet (a CNN originally trained on the ImageNet Large Visual Recognition Challenge dataset), was retrained (final layer) on a dataset of ~1500 images of poses.
 
 The model is able to estimate the human poses as well as classify the current pose to a fairly good degree of accuracy.
@@ -82,6 +86,8 @@ Run the above command to start pose estimation with the onboard webcam.
 [1] Freeze graph : https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py
 
 [2] Optimize graph : https://codelabs.developers.google.com/codelabs/tensorflow-for-poets-2
+
+This repository is copied from idloonet GitHub.
 
 
 
